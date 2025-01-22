@@ -356,6 +356,8 @@
 .story-img1 img {
   width: 100%;
   height: 470px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 .img-date1 {
   position: relative;
@@ -418,6 +420,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 .img-date {
   position: relative;
@@ -488,7 +492,6 @@ footer {
   align-items: top;
   margin-left: 105px;
   margin-right: 105px;
-
   padding: 123px 140px 174px 140px;
 }
 .lf-div1 {
@@ -564,4 +567,114 @@ footer {
 .right-footer .rf-sns {
   display: flex;
   gap: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  /* nav styles starts */
+  .nav-container {
+    margin: 12px 16px;
+  }
+
+  .left-nav .logo-container {
+    width: 46px;
+    height: 46px;
+  }
+
+  .logo-title {
+    display: none;
+  }
+
+  .middle-nav ul a {
+    display: none;
+  }
+
+  .right-nav button {
+    display: none;
+  }
+
+  .right-nav::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url("/assets/hamburger-menu.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  /* nav styles ends */
+  /* banner styles starts */
+  .banner {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+    margin: 250px 16px 300px 16px;
+    text-align: center;
+  }
+  .banner-description,
+  .banner-title {
+    text-align: center;
+  }
+
+  /* banner styles ends */
+
+  /* curriculum styles starts */
+
+  .curriculum {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .crc-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  /* curriculum styles ends */
+
+  /* stories styles starts */
+  .story1 {
+    display: none;
+  }
+  .story2,
+  .story3,
+  .story4,
+  .story5 {
+    width: 200px;
+  }
+  .story-date button {
+    font-size: 12px;
+    position: absolute;
+    bottom: -8px;
+    left: 20px;
+    z-index: 10;
+    border-radius: 47.93px;
+    font-family: Raleway;
+    font-weight: 500;
+    background: rgb(60, 216, 232);
+    color: white;
+    border: none;
+    padding: 5px 7px;
+  }
+
+  .og-story-title {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* stories styles ends */
+
+  /* footer styles starts */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 60px 20px 60px 20px;
+  }
+  /* footer styles ends */
 }
