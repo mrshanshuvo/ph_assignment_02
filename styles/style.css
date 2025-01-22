@@ -572,7 +572,10 @@ footer {
 @media screen and (max-width: 576px) {
   /* nav styles starts */
   .nav-container {
-    margin: 12px 16px;
+    margin: 0;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    border: 0.5px solid rgb(254, 163, 1);
   }
 
   .left-nav .logo-container {
@@ -608,8 +611,16 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     flex-direction: column-reverse;
-    margin: 250px 16px 300px 16px;
+    margin: 220px 16px 270px 16px;
     text-align: center;
+  }
+  .banner-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  .banner-description {
+    font-size: 14px;
   }
   .banner-description,
   .banner-title {
@@ -625,6 +636,19 @@ footer {
     margin-right: 16px;
   }
 
+  .content-description {
+    width: 70%;
+  }
+
+  .crc-content1,
+  .crc-content2,
+  .crc-content3 {
+    padding-bottom: 30px;
+  }
+
+  .crc-footer {
+    display: none;
+  }
   .crc-container {
     display: flex;
     flex-direction: column;
@@ -675,6 +699,11 @@ footer {
     flex-direction: column;
     margin: 0px;
     padding: 60px 20px 60px 20px;
+  }
+  .left-footer,
+  .middle-footer,
+  .right-footer {
+    margin-bottom: 30px;
   }
   /* footer styles ends */
 }
